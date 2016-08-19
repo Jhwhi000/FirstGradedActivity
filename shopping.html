@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping Calculator</title>
+    <!--Jared White-->
+</head>
+<body>
+    <form method="get" id="shoppingForm">
+        <fieldset>
+            <table style="border: solid 1px mediumvioletred">
+                <tr>
+                    <td><label for="Quantity">Quantity</label></td>
+                    <td><input type="number" id="quantity" name="quantity" value="1" min="1" required></td>
+                </tr>
+                <tr>
+                    <td><label for="price">Price Per Unit</label></td>
+                    <td><input id="price" type="text" value="1.00" name="price" required></td>
+                </tr>
+                <tr>
+                    <td><label for="TaxRate">Tax Rate (%)</label></td>
+                    <td><input type="text" id="TaxRate" value="1.00" name="TaxRate" required></td>
+                </tr>
+                <tr>
+                    <td><label for="Discount">Discount</label></td>
+                    <td><input type="text" id="Discount" value="0.00" name="Discount" required></td>
+                </tr>
+                <tr>
+                    <td><label for="total">Total</label></td>
+                    <td><input type="text" id="total" value="0.00" name="total" readonly></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="right"><input type="submit" id="submit" value="Calculate"></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
